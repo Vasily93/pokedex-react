@@ -17,8 +17,10 @@ class Pokecard extends React.Component {
         const imgUrl = getId(pokemon.id)
         return (
             <li key={pokemon.id}>
-                Pokemon: {pokemon.name}
-                <img alt="pokemon" src={imgUrl}/>
+                <p><img alt="pokemon" src={imgUrl}/></p>
+                 <p>{pokemon.name}</p>
+                 <p>{pokemon.type}</p>
+                 <p>{pokemon.base_experience}</p>
             </li>
         );
     }
